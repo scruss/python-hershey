@@ -12,7 +12,6 @@ The Python code creates an array of dictionaries (hashes), for example:
 		'charcode': 1,           # Hershey (NOT ASCII) character code
 		'left':  -5,             # left bearing X coordinate
 		'right':  5,             # right bearing X coordinate
-		'vertices': 8,           # indicative number of vertices
 		# glyph vectors: a list of lists of lists, or an array of
         #                lines of points
 		'lines': [[[0,-5],[-4,4]],[[0,-5],[4,4]],[[-2,1],[2,1]]]
@@ -105,6 +104,7 @@ in the public domain.
   [Forgive me, A V Hershey ...](http://scruss.com/blog/2014/05/02/forgive-me-a-v-hershey/
   "Forgive me, A V Hershey ..."). It is under a CC0/WTFPL licence, and
   can be used for anything.
+  
 * PDF page images of Wolcott & Hilsenrath's *“A contribution to
   computer typesetting techniques : tables of coordinates for
   Hershey's repertory of occidental type fonts and graphic symbols”* (1976)
@@ -112,15 +112,17 @@ in the public domain.
   [Catalog Record: A contribution to computer typesetting... | Hathi Trust Digital Library](http://catalog.hathitrust.org/Record/006865721
   "Catalog Record: A contribution to computer typesetting... | Hathi
   Trust Digital Library")
+
 * Allen V. Hershey's *Calligraphy for Computers* (US Naval Weapons
   Laboratory, 1967-08-01, NWL Report No. 2101, NTIS accession number
   AD-662 398) is still available for US $25 for a PDF copy from NTIS:
   [Calligraphy for Computers.](http://www.ntis.gov/search/product.aspx?ABBR=AD662398
   "Calligraphy for Computers."). It is of some historical interest.
-*
-  [plhershey-unicode.csv](http://sourceforge.net/p/plplot/code/HEAD/tree/trunk/fonts/plhershey-unicode.csv
+
+* The file [plhershey-unicode.csv](http://sourceforge.net/p/plplot/code/HEAD/tree/trunk/fonts/plhershey-unicode.csv
   "plhershey-unicode.csv") from the PLplot project purports to be a
-  Hershey to Unicode mapping table.
-  
- -- Stewart C. Russell, Toronto - scruss.com - 2014-05-07.
- 
+  Hershey to Unicode mapping table. It's not very useful.
+
+* [plotutils](http://www.gnu.org/software/plotutils/ "plotutils") has an updated table of glyphs embedded in its source code.
+
+Stewart C. Russell, Toronto - scruss.com - 2014-06-01

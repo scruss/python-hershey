@@ -2,7 +2,7 @@
 # hersheyparse.py - simple Hershey Font file parser
 # as an example, writes data to a JSON file
 # ** NB: Requires input to be cleaned of broken lines **
-# scruss - 2014-05-06 - WTFPL (srsly)
+# scruss - 2014-06-01 - WTFPL (srsly)
 
 from string import split
 import sys
@@ -16,7 +16,10 @@ def char2val(c):  # data is stored as signed bytes relative to ASCII R
 def hersh_bbox(lines):
     """ passed an array of lines, returns the smallest bounding box """
 
-    if lines[0][0][0] is None:
+    # nice ways of bombing out
+    if lines is None:
+        return None
+    if len(lines[0]) < 1:
         return None
     min_x = max_x = lines[0][0][0]
     min_y = max_y = lines[0][0][1]
@@ -36,8 +39,6 @@ def hersh_bbox(lines):
 def hersheyparse(dat):
     """ reads a line of Hershey font text """
 
-    if int(dat[5:8]) - 1 < 2:  # fail if there impossibly few vertices
-        return None
     lines = []
 
     # individual lines are stored separated by <space>+R
@@ -52,11 +53,10 @@ def hersheyparse(dat):
         line = map(None, *[iter(map(char2val, list(s)))] * 2)
         lines.append(line)
     glyph = {  # character code in columns 1-6; it's not ASCII
-               # indicative number of vertices in columns 6-9
+               # indicative number of vertices in columns 6-9 ** NOT USED **
                # left side bearing encoded in column 9
                # right side bearing encoded in column 10
         'charcode': int(dat[0:5]),
-        'vertices': int(dat[5:8]) - 1,
         'left': char2val(dat[8]),
         'right': char2val(dat[9]),
         'lines': lines,
