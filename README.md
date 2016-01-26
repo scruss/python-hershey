@@ -105,13 +105,15 @@ in the public domain.
   "Forgive me, A V Hershey ..."). It is under a CC0/WTFPL licence, and
   can be used for anything.
   
-* PDF page images of Wolcott & Hilsenrath's *“A contribution to
+* Archive.org hosts Wolcott & Hilsenrath's [A contribution to computer typesetting techniques : tables of coordinates for Hershey's repertory of occidental type fonts and graphic symbols](https://archive.org/details/contributiontoco424wolc)
+
+* (PDF page images of Wolcott & Hilsenrath's *“A contribution to
   computer typesetting techniques : tables of coordinates for
   Hershey's repertory of occidental type fonts and graphic symbols”* (1976)
   are available at the Hathi Trust, again marked as public domain:
   [Catalog Record: A contribution to computer typesetting... | Hathi Trust Digital Library](http://catalog.hathitrust.org/Record/006865721
   "Catalog Record: A contribution to computer typesetting... | Hathi
-  Trust Digital Library")
+  Trust Digital Library"))
 
 * Allen V. Hershey's *Calligraphy for Computers* (US Naval Weapons
   Laboratory, 1967-08-01, NWL Report No. 2101, NTIS accession number
