@@ -30,7 +30,7 @@ problems:
 1. They don't use any standard encoding
 2. They don't use modern font conventions, so aligning, parsing and
    setting Hershey text is a little complex
-3. Y-coordinates are positive *downwards*, so everything's upside down.
+3. Y-coordinates are positive *downwards*, so everything's upside down. (Or right way up, if you use SVG.)
 
 ## Requirements ##
 
@@ -120,6 +120,8 @@ in the public domain.
   AD-662 398) is still available for US $25 for a PDF copy from NTIS:
   [Calligraphy for Computers.](http://www.ntis.gov/search/product.aspx?ABBR=AD662398
   "Calligraphy for Computers."). It is of some historical interest.
+
+* *Calligraphy for Computers* is also available for free on Archive.org: [Calligraphy for Computers - Hershey, A V](https://archive.org/details/hershey-calligraphy_for_computers "Calligraphy for Computers - Hershey, A V"). Thanks to Frank Grießhammer [@kioskfonts](https://twitter.com/kioskfonts/status/632015080981327872) for pointing me to the record/download link on [dtic.mil](http://oai.dtic.mil/oai/oai?verb=getRecord&amp;metadataPrefix=html&amp;identifier=AD0662398).
 
 * The file [plhershey-unicode.csv](http://sourceforge.net/p/plplot/code/HEAD/tree/trunk/fonts/plhershey-unicode.csv
   "plhershey-unicode.csv") from the PLplot project purports to be a
